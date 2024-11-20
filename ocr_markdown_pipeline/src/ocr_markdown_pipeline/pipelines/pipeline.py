@@ -1,87 +1,85 @@
-"""
-This pipeline file includes two different examples to demonstrate the flexibility of crewAI pipelines.
-
-Example 1: Two-Stage Pipeline
------------------------------
-This pipeline consists of two crews:
-1. ResearchCrew: Performs research on a given topic.
-2. WriteXCrew: Generates an X (Twitter) post based on the research findings.
-
-Key features:
-- The ResearchCrew's final task uses output_json to store all research findings in a JSON object.
-- This JSON object is then passed to the WriteXCrew, where tasks can access the research findings.
-
-Example 2: Two-Stage Pipeline with Parallel Execution
--------------------------------------------------------
-This pipeline consists of three crews:
-1. ResearchCrew: Performs research on a given topic.
-2. WriteXCrew and WriteLinkedInCrew: Run in parallel, using the research findings to generate posts for X and LinkedIn, respectively.
-
-Key features:
-- Demonstrates the ability to run multiple crews in parallel.
-- Shows how to structure a pipeline with both sequential and parallel stages.
-
-Usage:
-- To switch between examples, comment/uncomment the respective code blocks below.
-- Ensure that you have implemented all necessary crew classes (ResearchCrew, WriteXCrew, WriteLinkedInCrew) before running.
-"""
-
-# Common imports for both examples
-from crewai import Pipeline
+from pathlib import Path
+from typing import List, Optional
+from pydantic import BaseModel
+from ..tools.ocr_tool import OCRTool
 
 
+class PipelineState(BaseModel):
+    """State management for the OCR to Markdown pipeline"""
 
-# Uncomment the crews you need for your chosen example
-from ..crews.research_crew.research_crew import ResearchCrew
-from ..crews.write_x_crew.write_x_crew import WriteXCrew
-# from .crews.write_linkedin_crew.write_linkedin_crew import WriteLinkedInCrew  # Uncomment for Example 2
+    input_directory: str = ""
+    processed_files: List[str] = []
+    extracted_texts: List[str] = []
+    output_file: str = "output.md"
 
-# EXAMPLE 1: Two-Stage Pipeline
-# -----------------------------
-# Uncomment the following code block to use Example 1
 
-class OcrMarkdownPipelinePipeline:
+class OCRMarkdownPipeline:
+    """Pipeline for converting image-based text to markdown"""
+
     def __init__(self):
-        # Initialize crews
-        self.research_crew = ResearchCrew().crew()
-        self.write_x_crew = WriteXCrew().crew()
-    
-    def create_pipeline(self):
-        return Pipeline(
-            stages=[
-                self.research_crew,
-                self.write_x_crew
-            ]
-        )
-    
-    async def kickoff(self, inputs):
-        pipeline = self.create_pipeline()
-        results = await pipeline.kickoff(inputs)
-        return results
+        self.state = PipelineState()
+        self.ocr_tool = OCRTool()
 
+    def scan_directory(self) -> Optional[str]:
+        """Scan input directory for image files"""
+        try:
+            path = Path(self.state.input_directory)
+            if not path.exists() or not path.is_dir():
+                self.state.processed_files = []
+                return None
 
-# EXAMPLE 2: Two-Stage Pipeline with Parallel Execution
-# -------------------------------------------------------
-# Uncomment the following code block to use Example 2
+            image_files = list(path.glob("*.png")) + list(path.glob("*.jpg"))
+            self.state.processed_files = [str(f) for f in image_files]
+            return None
+        except Exception as e:
+            return f"Error: {str(e)}"
 
-# @PipelineBase
-# class OcrMarkdownPipelinePipeline:
-#     def __init__(self):
-#         # Initialize crews
-#         self.research_crew = ResearchCrew().crew()
-#         self.write_x_crew = WriteXCrew().crew()
-#         self.write_linkedin_crew = WriteLinkedInCrew().crew()
-    
-#     @pipeline
-#     def create_pipeline(self):
-#         return Pipeline(
-#             stages=[
-#                 self.research_crew,
-#                 [self.write_x_crew, self.write_linkedin_crew]  # Parallel execution
-#             ]
-#         )
+    def process_images(self) -> Optional[str]:
+        """Process each image with OCR"""
+        try:
+            for image_path in self.state.processed_files:
+                try:
+                    text = self.ocr_tool._run(image_path)  # Use _run directly since we can't mock 'run'
+                    if text:
+                        self.state.extracted_texts.append(text)
+                except Exception:
+                    # Skip failed images
+                    continue
+            return None
+        except Exception as e:
+            return f"Error: {str(e)}"
 
-#     async def run(self, inputs):
-#         pipeline = self.create_pipeline()
-#         results = await pipeline.kickoff(inputs)
-#         return results
+    def create_markdown(self) -> str:
+        """Convert extracted text to markdown"""
+        try:
+            if not self.state.extracted_texts:
+                return ""
+
+            # Create markdown content
+            markdown_content = "# OCR Extracted Content\n\n"
+            for i, text in enumerate(self.state.extracted_texts, 1):
+                markdown_content += f"## Section {i}\n\n{text}\n\n"
+
+            # Write to file
+            output_path = Path(self.state.output_file)
+            output_path.write_text(markdown_content)
+
+            return markdown_content
+        except Exception as e:
+            return f"Error: {str(e)}"
+
+    def kickoff(self, inputs: dict) -> str:
+        """Start the pipeline execution"""
+        # Update state with inputs
+        self.state = PipelineState(**inputs)
+
+        # Execute pipeline stages
+        scan_result = self.scan_directory()
+        if scan_result:
+            return scan_result
+
+        process_result = self.process_images()
+        if process_result:
+            return process_result
+
+        return self.create_markdown()

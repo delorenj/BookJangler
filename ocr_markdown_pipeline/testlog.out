@@ -1,0 +1,32 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.5, pytest-8.3.3, pluggy-1.5.0 -- /home/delorenj/.cache/pypoetry/virtualenvs/ocr-markdown-pipeline-jbyAsQHV-py3.12/bin/python
+cachedir: .pytest_cache
+rootdir: /home/delorenj/code/book-jangler/ocr_markdown_pipeline
+configfile: pyproject.toml
+plugins: anyio-4.6.2.post1, cov-4.1.0
+collecting ... collected 7 items
+
+tests/test_pipeline.py::test_pipeline_state_initialization PASSED        [ 14%]
+tests/test_pipeline.py::test_pipeline_state_validation PASSED            [ 28%]
+tests/test_pipeline.py::test_pipeline_execution_order PASSED             [ 42%]
+tests/test_pipeline.py::test_pipeline_invalid_directory PASSED           [ 57%]
+tests/test_pipeline.py::test_pipeline_empty_directory PASSED             [ 71%]
+tests/test_pipeline.py::test_pipeline_output_creation PASSED             [ 85%]
+tests/test_pipeline.py::test_pipeline_resource_cleanup PASSED            [100%]
+
+=============================== warnings summary ===============================
+../../../.cache/pypoetry/virtualenvs/ocr-markdown-pipeline-jbyAsQHV-py3.12/lib/python3.12/site-packages/crewai/tools/base_tool.py:28
+  /home/delorenj/.cache/pypoetry/virtualenvs/ocr-markdown-pipeline-jbyAsQHV-py3.12/lib/python3.12/site-packages/crewai/tools/base_tool.py:28: PydanticDeprecatedSince20: Pydantic V1 style `@validator` validators are deprecated. You should migrate to Pydantic V2 style `@field_validator` validators, see the migration guide for more details. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.10/migration/
+    @validator("args_schema", always=True, pre=True)
+
+../../../.cache/pypoetry/virtualenvs/ocr-markdown-pipeline-jbyAsQHV-py3.12/lib/python3.12/site-packages/pydantic/_internal/_config.py:295
+../../../.cache/pypoetry/virtualenvs/ocr-markdown-pipeline-jbyAsQHV-py3.12/lib/python3.12/site-packages/pydantic/_internal/_config.py:295
+  /home/delorenj/.cache/pypoetry/virtualenvs/ocr-markdown-pipeline-jbyAsQHV-py3.12/lib/python3.12/site-packages/pydantic/_internal/_config.py:295: PydanticDeprecatedSince20: Support for class-based `config` is deprecated, use ConfigDict instead. Deprecated in Pydantic V2.0 to be removed in V3.0. See Pydantic V2 Migration Guide at https://errors.pydantic.dev/2.10/migration/
+    warnings.warn(DEPRECATION_MESSAGE, DeprecationWarning)
+
+../../../.cache/pypoetry/virtualenvs/ocr-markdown-pipeline-jbyAsQHV-py3.12/lib/python3.12/site-packages/litellm/utils.py:134
+  /home/delorenj/.cache/pypoetry/virtualenvs/ocr-markdown-pipeline-jbyAsQHV-py3.12/lib/python3.12/site-packages/litellm/utils.py:134: DeprecationWarning: open_text is deprecated. Use files() instead. Refer to https://importlib-resources.readthedocs.io/en/latest/using.html#migrating-from-legacy for migration advice.
+    with resources.open_text("litellm.llms.tokenizers", "anthropic_tokenizer.json") as f:
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+======================== 7 passed, 4 warnings in 3.77s =========================
