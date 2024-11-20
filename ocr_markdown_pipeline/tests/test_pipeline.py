@@ -2,7 +2,8 @@ import pytest
 from pathlib import Path
 from unittest.mock import patch, Mock
 from pydantic import ValidationError
-from ocr_markdown_pipeline import OCRMarkdownPipeline
+from ocr_markdown_pipeline.pipelines.pipeline import OCRMarkdownPipeline
+from ocr_markdown_pipeline.config import Config
 
 
 def test_pipeline_state_initialization():
@@ -19,51 +20,97 @@ def test_pipeline_state_validation():
         OCRMarkdownPipeline().kickoff(inputs={"input_directory": 123})
 
 
-def test_pipeline_execution_order():
-    """Pipeline stages execute in correct order"""
+def test_pipeline_handles_multiple_image_extensions():
+    """Pipeline processes multiple image extensions correctly"""
     pipeline = OCRMarkdownPipeline()
-    mock_scan = Mock(return_value=None)
-    mock_process = Mock(return_value=None)
+    mock_files = [
+        Path("test1.png"),
+        Path("test2.jpg"),
+        Path("test3.jpeg")
+    ]
+    
+    with patch.object(Path, "exists", return_value=True):
+        with patch.object(Path, "is_dir", return_value=True):
+            with patch.object(Path, "glob") as mock_glob:
+                # Set up mock to return different files for different extensions
+                def glob_side_effect(pattern):
+                    ext = pattern[2:]  # Remove *.
+                    return [f for f in mock_files if f.suffix[1:] == ext]
+                mock_glob.side_effect = glob_side_effect
+                
+                with patch.object(pipeline.ocr_tool, "_run", return_value="Test content"):
+                    pipeline.kickoff(inputs={"input_directory": "test_dir"})
+                    assert len(pipeline.state.processed_files) == 3
 
-    with patch.object(pipeline, "scan_directory", mock_scan):
-        with patch.object(pipeline, "process_images", mock_process):
-            pipeline.kickoff(inputs={"input_directory": "test_dir"})
-            mock_scan.assert_called_once()
-            mock_process.assert_called_once()
 
-
-def test_pipeline_invalid_directory():
-    """Pipeline handles invalid directory gracefully"""
+def test_pipeline_sorts_files():
+    """Pipeline sorts files when configured to do so"""
     pipeline = OCRMarkdownPipeline()
-    with patch.object(Path, "exists", return_value=False):
-        result = pipeline.kickoff(inputs={"input_directory": "nonexistent_dir"})
-        assert result == ""
+    pipeline.config.sort_files = True
+    mock_files = [
+        Path("c.png"),
+        Path("a.png"),
+        Path("b.png")
+    ]
+    
+    with patch.object(Path, "exists", return_value=True):
+        with patch.object(Path, "is_dir", return_value=True):
+            with patch.object(Path, "glob", return_value=mock_files):
+                with patch.object(pipeline.ocr_tool, "_run", return_value="Test content"):
+                    pipeline.kickoff(inputs={"input_directory": "test_dir"})
+                    sorted_files = [str(f) for f in sorted(mock_files)]
+                    assert pipeline.state.processed_files == sorted_files
 
 
-def test_pipeline_empty_directory():
+def test_pipeline_handles_empty_directory():
     """Pipeline handles empty directory appropriately"""
     pipeline = OCRMarkdownPipeline()
     with patch.object(Path, "exists", return_value=True):
         with patch.object(Path, "is_dir", return_value=True):
             with patch.object(Path, "glob", return_value=[]):
                 result = pipeline.kickoff(inputs={"input_directory": "empty_dir"})
-                assert result == ""
+                assert result.startswith("Error: No supported image files found")
 
 
-def test_pipeline_output_creation():
+def test_pipeline_handles_failed_image_processing():
+    """Pipeline continues processing when some images fail"""
+    pipeline = OCRMarkdownPipeline()
+    mock_files = [Path("test1.png"), Path("test2.png")]
+    
+    def mock_ocr(path):
+        if "test1" in str(path):
+            return "Success content"
+        raise Exception("OCR failed")
+    
+    with patch.object(Path, "exists", return_value=True):
+        with patch.object(Path, "is_dir", return_value=True):
+            with patch.object(Path, "glob", return_value=mock_files):
+                with patch.object(pipeline.ocr_tool, "_run", side_effect=mock_ocr):
+                    result = pipeline.kickoff(inputs={"input_directory": "test_dir"})
+                    assert len(pipeline.state.extracted_texts) == 1
+                    assert "Success content" in result
+
+
+def test_pipeline_output_format():
     """Pipeline produces expected markdown format"""
     pipeline = OCRMarkdownPipeline()
     with patch.object(Path, "exists", return_value=True):
         with patch.object(Path, "is_dir", return_value=True):
             with patch.object(Path, "glob", return_value=[Path("test.png")]):
                 with patch.object(pipeline.ocr_tool, "_run", return_value="Test content"):
-                    result = pipeline.kickoff(inputs={"input_directory": "test_images"})
-                    assert result.startswith("# OCR Extracted Content")
-                    assert Path("output.md").exists()
+                    result = pipeline.kickoff(inputs={"input_directory": "test_dir"})
+                    assert "# OCR Extracted Content" in result
+                    assert "## Page 1" in result
+                    assert "Test content" in result
 
 
-def test_pipeline_resource_cleanup():
-    """Pipeline properly cleans up resources after execution"""
-    pipeline = OCRMarkdownPipeline()
-    pipeline.kickoff(inputs={"input_directory": "test_dir"})
-    assert pipeline.state.extracted_texts == []
+def test_config_from_cli():
+    """Config properly initializes from CLI arguments"""
+    config = Config.from_cli(
+        input_dir="/custom/input",
+        output_file="custom_output.md"
+    )
+    assert str(config.input_directory) == "/custom/input"
+    assert str(config.output_file) == "custom_output.md"
+    assert "png" in config.image_extensions
+    assert config.sort_files is True

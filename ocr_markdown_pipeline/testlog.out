@@ -29,4 +29,4 @@ tests/test_pipeline.py::test_pipeline_resource_cleanup PASSED            [100%]
     with resources.open_text("litellm.llms.tokenizers", "anthropic_tokenizer.json") as f:
 
 -- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
-======================== 7 passed, 4 warnings in 3.77s =========================
+======================== 7 passed, 4 warnings in 2.65s =========================

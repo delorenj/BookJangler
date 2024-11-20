@@ -13,6 +13,7 @@ crewai = { extras = ["tools"], version = ">=0.79.2,<1.0.0" }
 asyncio = "*"
 pytesseract = "*"
 Pillow = "*"
+rich = "*"
 
 [tool.poetry.group.dev.dependencies]
 pytest = ">=8.0.0"
