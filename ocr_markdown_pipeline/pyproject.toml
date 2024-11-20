@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "ocr_markdown_pipeline"
+version = "0.1.0"
+description = "ocr_markdown_pipeline using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = ">=0.79.2,<1.0.0" }
+asyncio = "*"
+
+[tool.poetry.scripts]
+ocr_markdown_pipeline = "ocr_markdown_pipeline.main:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
