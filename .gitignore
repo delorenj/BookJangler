@@ -22,3 +22,4 @@ output/voxcpm2-chapter-01/*
 __pycache__/
 .ruff_cache/
 .pytest_cache/
+*.m4b
