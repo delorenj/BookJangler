@@ -1,0 +1,29 @@
+{
+  "book": "The Good Earth",
+  "author": "Pearl S. Buck",
+  "chapter": 1,
+  "primary_source": "the-good-earth.pdf, PDF pages 8–31 (printed pages 3–26)",
+  "sources": [
+    {"url": "https://www.litcharts.com/lit/the-good-earth/chapter-1", "kind": "chapter study guide", "used_for": "scene order, character behavior, speaking roles"},
+    {"url": "https://www.gradesaver.com/the-good-earth/study-guide/summary-chapter-1", "kind": "chapter study guide", "used_for": "Wang Lung's behavior and barber interaction"},
+    {"url": "https://www.bookrags.com/notes/ge/part1.html", "kind": "chapter study guide", "used_for": "dinner guest identities"},
+    {"url": "https://www.bookrags.com/notes/ge/chr.html", "kind": "character study guide", "used_for": "supporting character traits"},
+    {"url": "https://cspd.law.duke.edu/publicdomainday/2026", "kind": "copyright term explanation", "used_for": "1931 works enter U.S. public domain January 1, 2027"}
+  ],
+  "casting_policy": "Character facts are sourced; vocal pitch, accent, pacing and timbre are creative casting choices, not established historical facts. Use clear English without ethnic caricature or impersonating a real performer.",
+  "characters": {
+    "wang_lung": {"gender_in_text": "male", "age": "adult; precise age not established here", "facts": ["Poor farmer on his wedding day", "Frugal, hopeful, self-conscious around wealthy people"], "creative_direction": "Earnest light baritone, hesitant in unfamiliar company, firmer at home"},
+    "father": {"gender_in_text": "male", "age": "elderly; precise age not established here", "facts": ["Coughs each morning", "Traditional and frugal, complains about spending"], "creative_direction": "Weathered dry tone, clear clipped complaints rather than constant acted coughing"},
+    "o_lan": {"gender_in_text": "female", "age": 20, "age_evidence": "Old Mistress explicitly states twenty years old on PDF page 24", "facts": ["Former kitchen slave, sold into the Hwang household at age ten", "Capable cook, guarded and reserved", "Narration describes her voice as not loud, not soft, plain and not ill-tempered"], "creative_direction": "Grounded plain mid-low voice, restrained and matter-of-fact; not portrayed as foolish"},
+    "barber": {"gender_in_text": "male", "age": "not established", "facts": ["Teases Wang Lung and jokes about his bargaining and braid"], "creative_direction": "Brisk, amused mid-register delivery"},
+    "waiter": {"gender_in_text": "male", "age": "boy; exact age not established", "facts": ["Primary text calls him a waiting boy and a small boy", "Impatient with Wang Lung lingering"], "creative_direction": "Youthful light tenor, businesslike and impatient"},
+    "beggar": {"gender_in_text": "male by pronouns in primary text", "age": "not established", "facts": ["Asks Wang Lung for money at the restaurant"], "creative_direction": "Thin weary pleading voice"},
+    "gatekeeper": {"gender_in_text": "male", "age": "not established", "facts": ["Tall, rude, condescending, demands a silver piece", "Laughs and announces the bridegroom loudly"], "creative_direction": "Booming rough baritone, self-important"},
+    "old_mistress": {"gender_in_text": "female", "age": "very old; precise age not established", "facts": ["Wealthy commanding head of the household", "Distracted while smoking opium"], "creative_direction": "Thin imperious voice with deliberate pacing and abrupt dismissals"},
+    "uncle": {"gender_in_text": "male", "age": "adult of older generation; precise age not established", "facts": ["Wang Lung's paternal uncle", "Jovial, sly, hungry, fond of jokes", "Speaks in recalled conversation and at the wedding dinner"], "creative_direction": "Genial knowing voice with a sly edge"},
+    "vendor": {"gender_in_text": "not established for collective vendors", "age": "not established", "facts": ["Unnamed vendors call out about spring peaches"], "creative_direction": "One adult male street-call voice represents the quoted collective cry; this gender is a casting choice"},
+    "ching": {"gender_in_text": "male", "age": "adult; precise age not established", "facts": ["Small quiet neighbor and dinner guest", "No individually attributed direct speech in this chapter"], "casting": "No separate voice generated"},
+    "cousin": {"gender_in_text": "male", "age": 15, "age_evidence": "Primary text calls the uncle's son an impudent lad of fifteen on PDF page 29", "facts": ["Dinner guest", "No individually attributed direct speech in this chapter"], "casting": "No separate voice generated"}
+  },
+  "rights": {"first_publication_year": 1931, "renewal_year": 1958, "renewal_evidence": "Supplied PDF copyright page 5", "us_public_domain_date": "2027-01-01", "status_at_experiment": "Not yet U.S. public domain in October 2026; experiment uses the user's supplied PDF, not an external full-text retrieval"}
+}

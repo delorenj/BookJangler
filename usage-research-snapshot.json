@@ -1,0 +1,88 @@
+{
+  "captured_at_utc": "2026-10-07T00:37:49.932430+00:00",
+  "source": "OpenCode completed assistant-message usage fields",
+  "scope": "Explicit main session and delegated sessions; cumulative experiment setup, research, code, and rendering orchestration",
+  "totals": {
+    "input_tokens": 3741573,
+    "output_tokens": 44116,
+    "reasoning_tokens": 0,
+    "cache_read_tokens": 779008,
+    "cache_write_tokens": 0,
+    "reported_total_tokens": 4564697,
+    "opencode_reported_cost_usd": 0.0,
+    "completed_assistant_messages": 60,
+    "incomplete_assistant_messages_excluded": 1,
+    "messages_missing_total_tokens": 0
+  },
+  "sessions": [
+    {
+      "session_id": "ses_eec86cf8effeOs4w01XBV6IxIF",
+      "parent_session_id": null,
+      "models": [
+        "sol-6.1"
+      ],
+      "providers": [
+        "automaticai"
+      ],
+      "input_tokens": 1601918,
+      "output_tokens": 16940,
+      "reasoning_tokens": 0,
+      "cache_read_tokens": 601216,
+      "cache_write_tokens": 0,
+      "reported_total_tokens": 2220074,
+      "opencode_reported_cost_usd": 0.0,
+      "completed_assistant_messages": 31,
+      "incomplete_assistant_messages_excluded": 1,
+      "messages_missing_total_tokens": 0
+    },
+    {
+      "session_id": "ses_eec865c09ffe0V08iyu3v8LGAv",
+      "parent_session_id": "ses_eec86cf8effeOs4w01XBV6IxIF",
+      "models": [
+        "sol-6.1"
+      ],
+      "providers": [
+        "automaticai"
+      ],
+      "input_tokens": 1340792,
+      "output_tokens": 15620,
+      "reasoning_tokens": 0,
+      "cache_read_tokens": 21120,
+      "cache_write_tokens": 0,
+      "reported_total_tokens": 1377532,
+      "opencode_reported_cost_usd": 0.0,
+      "completed_assistant_messages": 12,
+      "incomplete_assistant_messages_excluded": 0,
+      "messages_missing_total_tokens": 0
+    },
+    {
+      "session_id": "ses_eec3a0e62ffe6uCSpz7Ueuyfnh",
+      "parent_session_id": "ses_eec86cf8effeOs4w01XBV6IxIF",
+      "models": [
+        "sol-6.1"
+      ],
+      "providers": [
+        "automaticai"
+      ],
+      "input_tokens": 798863,
+      "output_tokens": 11556,
+      "reasoning_tokens": 0,
+      "cache_read_tokens": 156672,
+      "cache_write_tokens": 0,
+      "reported_total_tokens": 967091,
+      "opencode_reported_cost_usd": 0.0,
+      "completed_assistant_messages": 17,
+      "incomplete_assistant_messages_excluded": 0,
+      "messages_missing_total_tokens": 0
+    }
+  ],
+  "actual_llm_charge_usd": null,
+  "caveats": [
+    "Snapshot excludes the current unfinished assistant message, later messages, and final response.",
+    "Repeated context/cache reads count on every request; totals are consumption, not unique chapter words.",
+    "Reasoning and cache fields are reported separately; do not add them to reported_total_tokens again.",
+    "A zero OpenCode-reported cost is not proof of zero provider cost or subscription consumption.",
+    "VoxCPM2 text tokens use another tokenizer and are recorded separately in metrics.json.",
+    "Search API charges, OCR CPU work, GPU electricity, and other infrastructure costs are not reported."
+  ]
+}

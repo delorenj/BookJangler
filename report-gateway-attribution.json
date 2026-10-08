@@ -1,0 +1,2694 @@
+{
+ "method": "Exact (uncached input, cache read, output) token tuple + gateway timestamp inside the message interval (+/-30s), exactly one candidate, no gateway row claimed twice. Inference: the gateway usage events carry no message key.",
+ "messages_considered": 202,
+ "matched": 202,
+ "ambiguous": [],
+ "unmatched": [],
+ "doubly_claimed_gateway_rows": [],
+ "billing_classes": {
+  "subscription": 202
+ },
+ "accounts": {
+  "openai-personal": 202
+ },
+ "routes": {
+  "automaticai/personal/sol-6.1": 202
+ },
+ "matches": [
+  {
+   "message_id": "msg_113793553001U1w4gWiadLhfzh",
+   "gateway_log_id": 90752,
+   "request_id": "202610062307536233605028268d9d6bnlbnvtU",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 31336,
+    "cache_read_tokens": 0,
+    "output_tokens": 236
+   }
+  },
+  {
+   "message_id": "msg_11379546b00184ABphbY6mXPHB",
+   "gateway_log_id": 90757,
+   "request_id": "202610062308011084695748268d9d6Mgczkqg3",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 37439,
+    "cache_read_tokens": 5888,
+    "output_tokens": 311
+   }
+  },
+  {
+   "message_id": "msg_1137979a7001zGAOJCTwbphy7m",
+   "gateway_log_id": 90762,
+   "request_id": "202610062308106427779508268d9d6KKjT2GYP",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 37771,
+    "cache_read_tokens": 5888,
+    "output_tokens": 363
+   }
+  },
+  {
+   "message_id": "msg_11379a63a001Pru4r30IkMXnpu",
+   "gateway_log_id": 90764,
+   "request_id": "202610062308220819537548268d9d6aoBMQoiV",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 41056,
+    "cache_read_tokens": 5888,
+    "output_tokens": 211
+   }
+  },
+  {
+   "message_id": "msg_11379a928001bOOk2er1svX4og",
+   "gateway_log_id": 90766,
+   "request_id": "202610062308231029148058268d9d6SvdTt3yy",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 23779,
+    "cache_read_tokens": 4224,
+    "output_tokens": 236
+   }
+  },
+  {
+   "message_id": "msg_11379bfd0001fz0RzVoqWbQtOp",
+   "gateway_log_id": 90770,
+   "request_id": "202610062308286212714488268d9d65zGEVB1d",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 50253,
+    "cache_read_tokens": 0,
+    "output_tokens": 238
+   }
+  },
+  {
+   "message_id": "msg_11379cb61001EFX5eDoBptor7r",
+   "gateway_log_id": 90776,
+   "request_id": "202610062308317335905138268d9d6lK2zdZGm",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 33186,
+    "cache_read_tokens": 4224,
+    "output_tokens": 408
+   }
+  },
+  {
+   "message_id": "msg_11379dd1c001nkoO5rf9nSLmuo",
+   "gateway_log_id": 90778,
+   "request_id": "202610062308361173512768268d9d6Wj0H5wGw",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 50409,
+    "cache_read_tokens": 0,
+    "output_tokens": 494
+   }
+  },
+  {
+   "message_id": "msg_1137a05e0001wiuHG3LjfdKLG7",
+   "gateway_log_id": 90785,
+   "request_id": "202610062308465710474168268d9d6Li96REhl",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 48321,
+    "cache_read_tokens": 0,
+    "output_tokens": 366
+   }
+  },
+  {
+   "message_id": "msg_1137a11de001Dh5KV2Z5RAW8J4",
+   "gateway_log_id": 90787,
+   "request_id": "202610062308497418148178268d9d6uWNVe7Fo",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 50761,
+    "cache_read_tokens": 0,
+    "output_tokens": 239
+   }
+  },
+  {
+   "message_id": "msg_1137a28730019AOZqBemuotGQG",
+   "gateway_log_id": 90790,
+   "request_id": "202610062308554315318138268d9d6ozkXo7jk",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 68448,
+    "cache_read_tokens": 0,
+    "output_tokens": 330
+   }
+  },
+  {
+   "message_id": "msg_1137a4c900010CyQsDqnTlFC2N",
+   "gateway_log_id": 90797,
+   "request_id": "202610062309046991218018268d9d6VjvJGd5m",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 93007,
+    "cache_read_tokens": 0,
+    "output_tokens": 613
+   }
+  },
+  {
+   "message_id": "msg_1137a8aec0010FpihYbOfQM78H",
+   "gateway_log_id": 90810,
+   "request_id": "202610062309206740859968268d9d6SHm3OcLF",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 108613,
+    "cache_read_tokens": 0,
+    "output_tokens": 1086
+   }
+  },
+  {
+   "message_id": "msg_1137af1c0001M54HHAvsf6p073",
+   "gateway_log_id": 90818,
+   "request_id": "202610062309471540951918268d9d6RxEw82uV",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 113201,
+    "cache_read_tokens": 4224,
+    "output_tokens": 810
+   }
+  },
+  {
+   "message_id": "msg_1137b4190001Z9s8dzyochF4h6",
+   "gateway_log_id": 90824,
+   "request_id": "202610062310074765480258268d9d6eCV6xiqm",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 138941,
+    "cache_read_tokens": 0,
+    "output_tokens": 926
+   }
+  },
+  {
+   "message_id": "msg_1137badaa001hkDHZkZKcjchbt",
+   "gateway_log_id": 90839,
+   "request_id": "202610062310352043756318268d9d6tzkXGFeG",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 155948,
+    "cache_read_tokens": 4224,
+    "output_tokens": 908
+   }
+  },
+  {
+   "message_id": "msg_1137bf878001PnF31APEd5we1p",
+   "gateway_log_id": 90853,
+   "request_id": "202610062310543305969958268d9d6ovhnvuWV",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 178983,
+    "cache_read_tokens": 0,
+    "output_tokens": 674
+   }
+  },
+  {
+   "message_id": "msg_1137c34b3001CMa22qr3MKCtYs",
+   "gateway_log_id": 90875,
+   "request_id": "202610062311098525433668268d9d6U4EQejre",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 185180,
+    "cache_read_tokens": 4224,
+    "output_tokens": 1087
+   }
+  },
+  {
+   "message_id": "msg_1137c9c01001qNnECH5VoZQMM9",
+   "gateway_log_id": 90949,
+   "request_id": "202610062311361762986948268d9d6isjyZQ5T",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 193185,
+    "cache_read_tokens": 0,
+    "output_tokens": 8176
+   }
+  },
+  {
+   "message_id": "msg_1137f07c8001C56Jhcso1c84dl",
+   "gateway_log_id": 90958,
+   "request_id": "202610062314147820229078268d9d6J7B9Esky",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 52214,
+    "cache_read_tokens": 5888,
+    "output_tokens": 177
+   }
+  },
+  {
+   "message_id": "msg_113c5866f001hM8maMyhCG0DHL",
+   "gateway_log_id": 91363,
+   "request_id": "202610070031149807660218268d9d6OW5DpNTx",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 52515,
+    "cache_read_tokens": 5888,
+    "output_tokens": 269
+   }
+  },
+  {
+   "message_id": "msg_113c5a4d1001OlN4dJ7VI0Hnc7",
+   "gateway_log_id": 91364,
+   "request_id": "202610070031224309935918268d9d6QaER0sp0",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 52862,
+    "cache_read_tokens": 5888,
+    "output_tokens": 201
+   }
+  },
+  {
+   "message_id": "msg_113c5f59f001h5x4ffyZti1zUR",
+   "gateway_log_id": 91366,
+   "request_id": "202610070031430990327678268d9d66jLK0VZB",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 25477,
+    "cache_read_tokens": 4736,
+    "output_tokens": 18
+   }
+  },
+  {
+   "message_id": "msg_113c5bdd0001hoWVeLAHAxU2Mg",
+   "gateway_log_id": 91365,
+   "request_id": "202610070031288428525378268d9d61Ktm86OK",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 60374,
+    "cache_read_tokens": 0,
+    "output_tokens": 516
+   }
+  },
+  {
+   "message_id": "msg_113c605d0001K0fKlm4JSiWelp",
+   "gateway_log_id": 91367,
+   "request_id": "202610070031473661438838268d9d62g9Je4YN",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 65471,
+    "cache_read_tokens": 0,
+    "output_tokens": 281
+   }
+  },
+  {
+   "message_id": "msg_113c60209001GgoF1e5iKLtNmh",
+   "gateway_log_id": 91368,
+   "request_id": "202610070031462774832318268d9d6gREuhupb",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 27920,
+    "cache_read_tokens": 4736,
+    "output_tokens": 448
+   }
+  },
+  {
+   "message_id": "msg_113c62f4f001CKV0jvSPgNnEfS",
+   "gateway_log_id": 91369,
+   "request_id": "202610070031578778411858268d9d6QBELOGeS",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 28174,
+    "cache_read_tokens": 4736,
+    "output_tokens": 53
+   }
+  },
+  {
+   "message_id": "msg_113c62355001IAZpplmkqfY8Os",
+   "gateway_log_id": 91370,
+   "request_id": "202610070031548445633408268d9d6DCbxjnyY",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 65960,
+    "cache_read_tokens": 0,
+    "output_tokens": 290
+   }
+  },
+  {
+   "message_id": "msg_113c63d42001Y1UXgPcVwE9D56",
+   "gateway_log_id": 91371,
+   "request_id": "202610070032014352772328268d9d6pmdH4RNg",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 28395,
+    "cache_read_tokens": 4736,
+    "output_tokens": 214
+   }
+  },
+  {
+   "message_id": "msg_113c65b36001aBJQWMiBCAnFE7",
+   "gateway_log_id": 91372,
+   "request_id": "202610070032091514339618268d9d6pFdviig8",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 60278,
+    "cache_read_tokens": 5888,
+    "output_tokens": 272
+   }
+  },
+  {
+   "message_id": "msg_113c65e2c001KRz9Czy5Fcpmnm",
+   "gateway_log_id": 91373,
+   "request_id": "202610070032098716649788268d9d6OZG02PTi",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 31367,
+    "cache_read_tokens": 4736,
+    "output_tokens": 445
+   }
+  },
+  {
+   "message_id": "msg_113c675bc001Q2Qj1N9rl1h3N1",
+   "gateway_log_id": 91374,
+   "request_id": "202610070032159715252908268d9d6FrAef3tT",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 63224,
+    "cache_read_tokens": 5888,
+    "output_tokens": 388
+   }
+  },
+  {
+   "message_id": "msg_113c693ba001jDXAkpC1ric9hX",
+   "gateway_log_id": 91375,
+   "request_id": "202610070032235900769988268d9d6Bfiu6lQ0",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 36986,
+    "cache_read_tokens": 4736,
+    "output_tokens": 401
+   }
+  },
+  {
+   "message_id": "msg_113c6d53b0016VQzVfNE0PJY6w",
+   "gateway_log_id": 91376,
+   "request_id": "202610070032403492149058268d9d6iAD3rgZv",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 44769,
+    "cache_read_tokens": 0,
+    "output_tokens": 483
+   }
+  },
+  {
+   "message_id": "msg_113c7085e001J5ZbBGdFh7Y4kX",
+   "gateway_log_id": 91378,
+   "request_id": "202610070032534575462678268d9d6o5EwRwpH",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 48943,
+    "cache_read_tokens": 4736,
+    "output_tokens": 306
+   }
+  },
+  {
+   "message_id": "msg_113c729040013sC7dzW0awz8zj",
+   "gateway_log_id": 91379,
+   "request_id": "202610070033018233811868268d9d6TWHcbKOM",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 30932,
+    "cache_read_tokens": 0,
+    "output_tokens": 256
+   }
+  },
+  {
+   "message_id": "msg_113c69b7e001aUw4LiykJ5EgPO",
+   "gateway_log_id": 91377,
+   "request_id": "202610070032256208535388268d9d62UjKjdRd",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 72843,
+    "cache_read_tokens": 0,
+    "output_tokens": 1676
+   }
+  },
+  {
+   "message_id": "msg_113c7491200197gL66ON8PFskv",
+   "gateway_log_id": 91380,
+   "request_id": "202610070033100031628078268d9d6f2oOYC0t",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 26447,
+    "cache_read_tokens": 4736,
+    "output_tokens": 201
+   }
+  },
+  {
+   "message_id": "msg_113c73141001rp4cQFEJYvKng8",
+   "gateway_log_id": 91381,
+   "request_id": "202610070033039187995518268d9d6k7fsVKcN",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 49172,
+    "cache_read_tokens": 4736,
+    "output_tokens": 553
+   }
+  },
+  {
+   "message_id": "msg_113c755b10017u6Mqq24VrRNnK",
+   "gateway_log_id": 91382,
+   "request_id": "202610070033133277640218268d9d6xSuCEi2h",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 68305,
+    "cache_read_tokens": 5888,
+    "output_tokens": 272
+   }
+  },
+  {
+   "message_id": "msg_113c76420001578MCI01RtWxVG",
+   "gateway_log_id": 91383,
+   "request_id": "202610070033169351270438268d9d6jxUf4413",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 39608,
+    "cache_read_tokens": 0,
+    "output_tokens": 380
+   }
+  },
+  {
+   "message_id": "msg_113c77203001Az6w6G7WBLmw31",
+   "gateway_log_id": 91384,
+   "request_id": "202610070033205256662218268d9d6ynauDLG8",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 71929,
+    "cache_read_tokens": 5888,
+    "output_tokens": 438
+   }
+  },
+  {
+   "message_id": "msg_113c78540001Vr7q64PQx7R9I9",
+   "gateway_log_id": 91385,
+   "request_id": "202610070033254159656638268d9d6uBPbKb7K",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 38729,
+    "cache_read_tokens": 4736,
+    "output_tokens": 525
+   }
+  },
+  {
+   "message_id": "msg_113c7b55f001TqlogNEg2fIpPB",
+   "gateway_log_id": 91387,
+   "request_id": "202610070033377479003748268d9d60N9WtG98",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 53845,
+    "cache_read_tokens": 4736,
+    "output_tokens": 100
+   }
+  },
+  {
+   "message_id": "msg_113c76f3f001FinFhtViYoz33x",
+   "gateway_log_id": 91386,
+   "request_id": "202610070033197938893398268d9d6RRAEIKyT",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 56942,
+    "cache_read_tokens": 0,
+    "output_tokens": 1024
+   }
+  },
+  {
+   "message_id": "msg_113c79aa8001GWV6tXFunIDmks",
+   "gateway_log_id": 91388,
+   "request_id": "202610070033309430462298268d9d6wXHPE9Wd",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 76862,
+    "cache_read_tokens": 5888,
+    "output_tokens": 1307
+   }
+  },
+  {
+   "message_id": "msg_113c82a2a001G2TMay2vau6sR0",
+   "gateway_log_id": 91389,
+   "request_id": "202610070034077026520938268d9d60co3Pl1H",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 4111,
+    "cache_read_tokens": 26624,
+    "output_tokens": 18
+   }
+  },
+  {
+   "message_id": "msg_113c7d60a001N1JG6O29l44AVY",
+   "gateway_log_id": 91390,
+   "request_id": "202610070033462381297978268d9d6JNgFinP0",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 15397,
+    "cache_read_tokens": 53504,
+    "output_tokens": 1378
+   }
+  },
+  {
+   "message_id": "msg_113c835c7001QMzbjhSaOa3eAC",
+   "gateway_log_id": 91391,
+   "request_id": "202610070034105994932518268d9d6lHw4FioU",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 26834,
+    "cache_read_tokens": 4736,
+    "output_tokens": 268
+   }
+  },
+  {
+   "message_id": "msg_113c8530e001OQQ3HNGTp3sFg1",
+   "gateway_log_id": 91392,
+   "request_id": "202610070034180838726948268d9d69DFJzTD1",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 31839,
+    "cache_read_tokens": 0,
+    "output_tokens": 139
+   }
+  },
+  {
+   "message_id": "msg_113c826d70010vxNWfBnKPmpcd",
+   "gateway_log_id": 91393,
+   "request_id": "202610070034069001329868268d9d6zqlCu1YN",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 25047,
+    "cache_read_tokens": 58624,
+    "output_tokens": 689
+   }
+  },
+  {
+   "message_id": "msg_113c8642d001n2uXONfzmmQz7W",
+   "gateway_log_id": 91395,
+   "request_id": "202610070034224694687798268d9d6T5d0s2MR",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 6952,
+    "cache_read_tokens": 26624,
+    "output_tokens": 356
+   }
+  },
+  {
+   "message_id": "msg_113c86d04001SYjW91KZpyW56X",
+   "gateway_log_id": 91394,
+   "request_id": "202610070034248109135748268d9d6HHOw2uyh",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 2310,
+    "cache_read_tokens": 83584,
+    "output_tokens": 162
+   }
+  },
+  {
+   "message_id": "msg_113c88895001nktNEG7dsV8sSe",
+   "gateway_log_id": 91396,
+   "request_id": "202610070034317892695568268d9d6rmGaEAwI",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 13490,
+    "cache_read_tokens": 26624,
+    "output_tokens": 304
+   }
+  },
+  {
+   "message_id": "msg_113c888e5001aOuHvkbWvF887y",
+   "gateway_log_id": 91397,
+   "request_id": "202610070034319481159858268d9d6sepXugHm",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 12954,
+    "cache_read_tokens": 74112,
+    "output_tokens": 324
+   }
+  },
+  {
+   "message_id": "msg_113c84eb5001O50nz6qzEq7N77",
+   "gateway_log_id": 91398,
+   "request_id": "202610070034170329803378268d9d6ztn215m9",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 67632,
+    "cache_read_tokens": 4736,
+    "output_tokens": 1041
+   }
+  },
+  {
+   "message_id": "msg_113c8a675001LsCXxqTnq3fHqe",
+   "gateway_log_id": 91399,
+   "request_id": "202610070034394406594218268d9d6Hy22Zu5j",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 43810,
+    "cache_read_tokens": 0,
+    "output_tokens": 320
+   }
+  },
+  {
+   "message_id": "msg_113c7cec3001ai79rttos9OwHE",
+   "gateway_log_id": 91401,
+   "request_id": "202610070033442726261068268d9d6uOL5Cx2W",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 61248,
+    "cache_read_tokens": 0,
+    "output_tokens": 3000
+   }
+  },
+  {
+   "message_id": "msg_113c8c38e001RXRPW5Q7Y1tS7j",
+   "gateway_log_id": 91400,
+   "request_id": "202610070034469148489068268d9d6k85iGU9O",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 20844,
+    "cache_read_tokens": 26624,
+    "output_tokens": 326
+   }
+  },
+  {
+   "message_id": "msg_113c8aaad001dlcMcXxkNHEWyJ",
+   "gateway_log_id": 91402,
+   "request_id": "202610070034405884961068268d9d6RjbbOexk",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 81867,
+    "cache_read_tokens": 5888,
+    "output_tokens": 367
+   }
+  },
+  {
+   "message_id": "msg_113c8fe050014INEkX5uj3RLmO",
+   "gateway_log_id": 91405,
+   "request_id": "202610070035019347309578268d9d6qnEDdCTy",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 82553,
+    "cache_read_tokens": 5888,
+    "output_tokens": 618
+   }
+  },
+  {
+   "message_id": "msg_113c8b3ba001fBDuz2mJo4iQlH",
+   "gateway_log_id": 91404,
+   "request_id": "202610070034428864328718268d9d6pOKz5zpj",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 69580,
+    "cache_read_tokens": 4736,
+    "output_tokens": 1345
+   }
+  },
+  {
+   "message_id": "msg_113c8e066001LvkAWqxV5LEy5n",
+   "gateway_log_id": 91407,
+   "request_id": "202610070034543181449478268d9d65ppKb17y",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 46432,
+    "cache_read_tokens": 4736,
+    "output_tokens": 776
+   }
+  },
+  {
+   "message_id": "msg_113c93f06001ObQB4GilZfmFiS",
+   "gateway_log_id": 91410,
+   "request_id": "202610070035185549070668268d9d6tiuVsxnS",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 46898,
+    "cache_read_tokens": 4736,
+    "output_tokens": 626
+   }
+  },
+  {
+   "message_id": "msg_113c93c8d00105e4WrV3bdH0C8",
+   "gateway_log_id": 91411,
+   "request_id": "202610070035179481302348268d9d67V8wV3Fz",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 38323,
+    "cache_read_tokens": 41600,
+    "output_tokens": 696
+   }
+  },
+  {
+   "message_id": "msg_113c939710019JhEUMI6XPZ61W",
+   "gateway_log_id": 91413,
+   "request_id": "202610070035171301748578268d9d6FFhbatXl",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 45570,
+    "cache_read_tokens": 43520,
+    "output_tokens": 1735
+   }
+  },
+  {
+   "message_id": "msg_113c981160011IamXQx0KRRyls",
+   "gateway_log_id": 91414,
+   "request_id": "202610070035354845703788268d9d6oBhXhJKt",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 47381,
+    "cache_read_tokens": 4736,
+    "output_tokens": 650
+   }
+  },
+  {
+   "message_id": "msg_113c98fb0001y5e1AJH6eHq9zI",
+   "gateway_log_id": 91415,
+   "request_id": "202610070035391995366298268d9d6YhHfKLMb",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 76367,
+    "cache_read_tokens": 4736,
+    "output_tokens": 612
+   }
+  },
+  {
+   "message_id": "msg_113c9b4ba001eXkN0j57JfTHsD",
+   "gateway_log_id": 91416,
+   "request_id": "202610070035487226044598268d9d6IxNJrIV1",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 84663,
+    "cache_read_tokens": 5888,
+    "output_tokens": 366
+   }
+  },
+  {
+   "message_id": "msg_113c9e2ec00150y4Ilr7RqrkiT",
+   "gateway_log_id": 91418,
+   "request_id": "202610070036004891067768268d9d6S45tFSq1",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 23819,
+    "cache_read_tokens": 4224,
+    "output_tokens": 223
+   }
+  },
+  {
+   "message_id": "msg_113c9dd8d001R1TmXLMkFYy6aw",
+   "gateway_log_id": 91419,
+   "request_id": "202610070035591580963248268d9d6a37jfET5",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 91061,
+    "cache_read_tokens": 0,
+    "output_tokens": 587
+   }
+  },
+  {
+   "message_id": "msg_113c9fdc8001ltLCpMTpLKDX52",
+   "gateway_log_id": 91421,
+   "request_id": "202610070036073392392908268d9d6Fi4yXtWO",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 32787,
+    "cache_read_tokens": 4224,
+    "output_tokens": 435
+   }
+  },
+  {
+   "message_id": "msg_113ca24a7001rZWi1zBeURSwHT",
+   "gateway_log_id": 91423,
+   "request_id": "202610070036172987206328268d9d6wprrTThR",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 15858,
+    "cache_read_tokens": 24448,
+    "output_tokens": 426
+   }
+  },
+  {
+   "message_id": "msg_113c9d95d0015eXG8MvWRudMOJ",
+   "gateway_log_id": 91424,
+   "request_id": "202610070035580547511378268d9d61kPi5bwk",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 76596,
+    "cache_read_tokens": 4736,
+    "output_tokens": 1129
+   }
+  },
+  {
+   "message_id": "msg_113ca1690001y58cwXe4wKM8aU",
+   "gateway_log_id": 91426,
+   "request_id": "202610070036137420041748268d9d66ZHb1T1p",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 91494,
+    "cache_read_tokens": 0,
+    "output_tokens": 1234
+   }
+  },
+  {
+   "message_id": "msg_113ca4dc30018T2heZBneTUSx1",
+   "gateway_log_id": 91427,
+   "request_id": "202610070036278107033968268d9d69xphXEot",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 40949,
+    "cache_read_tokens": 0,
+    "output_tokens": 727
+   }
+  },
+  {
+   "message_id": "msg_113ca7993001yZHt1TCwN2Wyf1",
+   "gateway_log_id": 91429,
+   "request_id": "202610070036391078371598268d9d6k1pu52rZ",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 1864,
+    "cache_read_tokens": 90368,
+    "output_tokens": 526
+   }
+  },
+  {
+   "message_id": "msg_113ca89860012yyjbs39YLEN1w",
+   "gateway_log_id": 91431,
+   "request_id": "202610070036431361603168268d9d6kXAHvJkk",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 23414,
+    "cache_read_tokens": 24448,
+    "output_tokens": 607
+   }
+  },
+  {
+   "message_id": "msg_113ca58bc001AuTjh223EIGhsn",
+   "gateway_log_id": 91433,
+   "request_id": "202610070036306706942978268d9d6qTir8UeO",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 76823,
+    "cache_read_tokens": 4736,
+    "output_tokens": 1410
+   }
+  },
+  {
+   "message_id": "msg_113caaa18001jbxchsQzxIi327",
+   "gateway_log_id": 91434,
+   "request_id": "202610070036515189197458268d9d6l37rsFLK",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 15537,
+    "cache_read_tokens": 77696,
+    "output_tokens": 706
+   }
+  },
+  {
+   "message_id": "msg_113c9c860001SFr6eQXl9acs92",
+   "gateway_log_id": 91435,
+   "request_id": "202610070035537188108098268d9d6TvubCCqv",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 28331,
+    "cache_read_tokens": 26624,
+    "output_tokens": 3605
+   }
+  },
+  {
+   "message_id": "msg_113cac467001eh4aEbMuSAj958",
+   "gateway_log_id": 91437,
+   "request_id": "202610070036581893149528268d9d6OdonTZ0Q",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 46764,
+    "cache_read_tokens": 4224,
+    "output_tokens": 1270
+   }
+  },
+  {
+   "message_id": "msg_113caf1fa001fUKQT0c7VfMYde",
+   "gateway_log_id": 91439,
+   "request_id": "202610070037099212014568268d9d6Dq9OFfNb",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 5136,
+    "cache_read_tokens": 90880,
+    "output_tokens": 1447
+   }
+  },
+  {
+   "message_id": "msg_113cb26bc001sBIghb2LoRSOax",
+   "gateway_log_id": 91441,
+   "request_id": "202610070037233785178008268d9d6SecXaQ5m",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 53788,
+    "cache_read_tokens": 0,
+    "output_tokens": 923
+   }
+  },
+  {
+   "message_id": "msg_113cb5820001ismQaF8azV7U5Y",
+   "gateway_log_id": 91443,
+   "request_id": "202610070037360734910288268d9d6KdykLFM5",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 97392,
+    "cache_read_tokens": 0,
+    "output_tokens": 426
+   }
+  },
+  {
+   "message_id": "msg_113c8e04b001DUoJ1r7wVNp0ta",
+   "gateway_log_id": 91446,
+   "request_id": "202610070034542870590628268d9d6OKzDJs7l",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 34875,
+    "cache_read_tokens": 26624,
+    "output_tokens": 12280
+   }
+  },
+  {
+   "message_id": "msg_113cb8f71001e1g32DCwsoix7Y",
+   "gateway_log_id": 91453,
+   "request_id": "202610070037502392910718268d9d6qMnRpUPZ",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 91736,
+    "cache_read_tokens": 5888,
+    "output_tokens": 677
+   }
+  },
+  {
+   "message_id": "msg_113cb1c1a001E29RanjB4rbFiM",
+   "gateway_log_id": 91451,
+   "request_id": "202610070037207190661148268d9d6ZLQ2sBDn",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 13327,
+    "cache_read_tokens": 43648,
+    "output_tokens": 2342
+   }
+  },
+  {
+   "message_id": "msg_113cbb40a001IIm1Vxcff6wQLA",
+   "gateway_log_id": 91456,
+   "request_id": "202610070037595807353928268d9d6xIIqCA0t",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 40881,
+    "cache_read_tokens": 30848,
+    "output_tokens": 559
+   }
+  },
+  {
+   "message_id": "msg_113cbdf7c001Dz5Zg2GI5wPtRQ",
+   "gateway_log_id": 91457,
+   "request_id": "202610070038107650536888268d9d6W3dTTGiI",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 98584,
+    "cache_read_tokens": 0,
+    "output_tokens": 357
+   }
+  },
+  {
+   "message_id": "msg_113cc06140019Cwc7CIJA3uDFH",
+   "gateway_log_id": 91462,
+   "request_id": "202610070038205717236028268d9d6PU0Huw1X",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 77569,
+    "cache_read_tokens": 4736,
+    "output_tokens": 679
+   }
+  },
+  {
+   "message_id": "msg_113cc0b6b001Op0FmY0wOKhZog",
+   "gateway_log_id": 91463,
+   "request_id": "202610070038219739928128268d9d6f5T5yD2m",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 48402,
+    "cache_read_tokens": 50304,
+    "output_tokens": 673
+   }
+  },
+  {
+   "message_id": "msg_113cb764100137cSRIhUneXKeT",
+   "gateway_log_id": 91464,
+   "request_id": "202610070037437331869498268d9d669ZLuAW8",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 56281,
+    "cache_read_tokens": 0,
+    "output_tokens": 2687
+   }
+  },
+  {
+   "message_id": "msg_113cc50a6001jcJsi9Q9o0Ohy0",
+   "gateway_log_id": 91467,
+   "request_id": "202610070038399314744718268d9d6q5oqkop3",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 99096,
+    "cache_read_tokens": 0,
+    "output_tokens": 869
+   }
+  },
+  {
+   "message_id": "msg_113cc505d001iRdDv54R5hnEY2",
+   "gateway_log_id": 91468,
+   "request_id": "202610070038397053987578268d9d6Ng7EbcAg",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 77751,
+    "cache_read_tokens": 4736,
+    "output_tokens": 1185
+   }
+  },
+  {
+   "message_id": "msg_113ccb1ef001fY0lxMZyOuJ6Dn",
+   "gateway_log_id": 91472,
+   "request_id": "202610070039046113912038268d9d64pfe3W9q",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 96226,
+    "cache_read_tokens": 5888,
+    "output_tokens": 844
+   }
+  },
+  {
+   "message_id": "msg_113cccf7100152p6HFAlxbhfwe",
+   "gateway_log_id": 91474,
+   "request_id": "202610070039121275322168268d9d6L7AYlDKA",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 56033,
+    "cache_read_tokens": 26624,
+    "output_tokens": 714
+   }
+  },
+  {
+   "message_id": "msg_113cd1167001CbZ94BZJtAuzRw",
+   "gateway_log_id": 91477,
+   "request_id": "202610070039289934782188268d9d62YWthWoR",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 61141,
+    "cache_read_tokens": 0,
+    "output_tokens": 421
+   }
+  },
+  {
+   "message_id": "msg_113cd3d6b001883laO3cCy0UPk",
+   "gateway_log_id": 91478,
+   "request_id": "202610070039402462873748268d9d6kXW7j5Ef",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 57780,
+    "cache_read_tokens": 4224,
+    "output_tokens": 195
+   }
+  },
+  {
+   "message_id": "msg_113cd154e0010cW84ao5OKf93b",
+   "gateway_log_id": 91481,
+   "request_id": "202610070039300091920708268d9d6YAPRuUhk",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 82874,
+    "cache_read_tokens": 0,
+    "output_tokens": 623
+   }
+  },
+  {
+   "message_id": "msg_113cd1044001XM6b7nVMIOMb56",
+   "gateway_log_id": 91480,
+   "request_id": "202610070039287542164668268d9d6pcFxmR7Y",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 96930,
+    "cache_read_tokens": 5888,
+    "output_tokens": 558
+   }
+  },
+  {
+   "message_id": "msg_113cbe32e001tv5Bg1Om7IK5vF",
+   "gateway_log_id": 91482,
+   "request_id": "202610070038116595551498268d9d6K19IhXDE",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 32556,
+    "cache_read_tokens": 26624,
+    "output_tokens": 4763
+   }
+  },
+  {
+   "message_id": "msg_113cd610e001V7ATww8ZZBhpaX",
+   "gateway_log_id": 91486,
+   "request_id": "202610070039494425029688268d9d6Fq8QOlfa",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 13019,
+    "cache_read_tokens": 91392,
+    "output_tokens": 403
+   }
+  },
+  {
+   "message_id": "msg_113cd9437001XtgF9TKSt2CJbW",
+   "gateway_log_id": 91488,
+   "request_id": "202610070040025325460358268d9d6keKAjrJA",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 99747,
+    "cache_read_tokens": 5888,
+    "output_tokens": 605
+   }
+  },
+  {
+   "message_id": "msg_113cddaf4001ZgfoM9J67xUJoA",
+   "gateway_log_id": 91491,
+   "request_id": "202610070040206532712008268d9d67TpcLNbS",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 105743,
+    "cache_read_tokens": 0,
+    "output_tokens": 109
+   }
+  },
+  {
+   "message_id": "msg_113cdee91001srAuDYRPr4IYqn",
+   "gateway_log_id": 91492,
+   "request_id": "202610070040256772342218268d9d6kxZ44dM4",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 99985,
+    "cache_read_tokens": 5888,
+    "output_tokens": 117
+   }
+  },
+  {
+   "message_id": "msg_113cd6d1e0014hYXP59kf8fjUs",
+   "gateway_log_id": 91496,
+   "request_id": "202610070039525127527878268d9d6UsVTjxsm",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 54713,
+    "cache_read_tokens": 4736,
+    "output_tokens": 2641
+   }
+  },
+  {
+   "message_id": "msg_113ce0308001WbgThW71Vk9xNI",
+   "gateway_log_id": 91499,
+   "request_id": "202610070040309142500938268d9d6OuEEO2Sm",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 100123,
+    "cache_read_tokens": 5888,
+    "output_tokens": 483
+   }
+  },
+  {
+   "message_id": "msg_113ce7ff90018W72RQ7KPYCjH2",
+   "gateway_log_id": 91502,
+   "request_id": "202610070041029566526928268d9d65ZYoBFhn",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 55581,
+    "cache_read_tokens": 50560,
+    "output_tokens": 335
+   }
+  },
+  {
+   "message_id": "msg_113ce564a001uOW7sIDFZ8eUnF",
+   "gateway_log_id": 91505,
+   "request_id": "202610070040522159929218268d9d6kmKEoldm",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 59547,
+    "cache_read_tokens": 0,
+    "output_tokens": 1625
+   }
+  },
+  {
+   "message_id": "msg_113cead75001EtLx612aiRkoGL",
+   "gateway_log_id": 91506,
+   "request_id": "202610070041145574370158268d9d6PMhO3IEA",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 107124,
+    "cache_read_tokens": 0,
+    "output_tokens": 709
+   }
+  },
+  {
+   "message_id": "msg_113cedd03001Nxzv4X5NiZIAOC",
+   "gateway_log_id": 91508,
+   "request_id": "202610070041266964111728268d9d6GM6o5lom",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 56464,
+    "cache_read_tokens": 4736,
+    "output_tokens": 802
+   }
+  },
+  {
+   "message_id": "msg_113cef89a001dUrSSrT4uFrrai",
+   "gateway_log_id": 91509,
+   "request_id": "202610070041337803776398268d9d6ls1azRj7",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 107336,
+    "cache_read_tokens": 0,
+    "output_tokens": 719
+   }
+  },
+  {
+   "message_id": "msg_113cd60ae0010gerBHre4zzW9b",
+   "gateway_log_id": 91512,
+   "request_id": "202610070039493574441728268d9d6SZ3TmT9w",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 56501,
+    "cache_read_tokens": 26624,
+    "output_tokens": 9303
+   }
+  },
+  {
+   "message_id": "msg_113cd5d64001T4XaH0OCVOp2EY",
+   "gateway_log_id": 91513,
+   "request_id": "202610070039486876634428268d9d6BHadc9pg",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 69357,
+    "cache_read_tokens": 4224,
+    "output_tokens": 5508
+   }
+  },
+  {
+   "message_id": "msg_113cf61fe001krcZMJEXp9lkgx",
+   "gateway_log_id": 91514,
+   "request_id": "202610070042007359814808268d9d6lCgbKcOu",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 65308,
+    "cache_read_tokens": 26624,
+    "output_tokens": 242
+   }
+  },
+  {
+   "message_id": "msg_113cf4d250012X6U0hEoqvMP21",
+   "gateway_log_id": 91519,
+   "request_id": "202610070041555092056108268d9d65tu6QWZ7",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 10211,
+    "cache_read_tokens": 97536,
+    "output_tokens": 740
+   }
+  },
+  {
+   "message_id": "msg_113cf7b67001itQtzmKtASAm5R",
+   "gateway_log_id": 91520,
+   "request_id": "202610070042072224773558268d9d65IZ2fxgD",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 93589,
+    "cache_read_tokens": 0,
+    "output_tokens": 559
+   }
+  },
+  {
+   "message_id": "msg_113cfa9c9001g2m4kodBsowui2",
+   "gateway_log_id": 91522,
+   "request_id": "202610070042191343215228268d9d6y8NdpLOZ",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 102079,
+    "cache_read_tokens": 5888,
+    "output_tokens": 523
+   }
+  },
+  {
+   "message_id": "msg_113cfc5c500121ITXFMC6owhBo",
+   "gateway_log_id": 91523,
+   "request_id": "202610070042262949289448268d9d6ac72O2w4",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 97032,
+    "cache_read_tokens": 0,
+    "output_tokens": 587
+   }
+  },
+  {
+   "message_id": "msg_113d007830014CkcT2d6HSNDao",
+   "gateway_log_id": 91531,
+   "request_id": "202610070042430965219698268d9d6AH392Qpu",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 92386,
+    "cache_read_tokens": 4736,
+    "output_tokens": 1704
+   }
+  },
+  {
+   "message_id": "msg_113d0bcfb001jQDiJql41d7IWG",
+   "gateway_log_id": 91532,
+   "request_id": "202610070043295728022368268d9d64TsA0eQk",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 93807,
+    "cache_read_tokens": 4736,
+    "output_tokens": 284
+   }
+  },
+  {
+   "message_id": "msg_113d0de06001rKUeExxbX0Uxlr",
+   "gateway_log_id": 91534,
+   "request_id": "202610070043380549658828268d9d6VYxL3l58",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 78065,
+    "cache_read_tokens": 26624,
+    "output_tokens": 641
+   }
+  },
+  {
+   "message_id": "msg_113d126ac0014GB6bXo4fLr9CU",
+   "gateway_log_id": 91535,
+   "request_id": "202610070043566289024548268d9d6BV0i2B1p",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 106431,
+    "cache_read_tokens": 0,
+    "output_tokens": 557
+   }
+  },
+  {
+   "message_id": "msg_113cf23c2001s27HA1vts6TNew",
+   "gateway_log_id": 91538,
+   "request_id": "202610070041448142625288268d9d6M32LNHyV",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 59459,
+    "cache_read_tokens": 4736,
+    "output_tokens": 11460
+   }
+  },
+  {
+   "message_id": "msg_113d1d91f0015pLtID2xQoGvS4",
+   "gateway_log_id": 91539,
+   "request_id": "202610070044423387844518268d9d61RLaGYec",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 68351,
+    "cache_read_tokens": 4736,
+    "output_tokens": 153
+   }
+  },
+  {
+   "message_id": "msg_113d1ee230017Uw9lqMVr3GO2z",
+   "gateway_log_id": 91541,
+   "request_id": "202610070044477286860778268d9d6qq9p8Bou",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 55269,
+    "cache_read_tokens": 26624,
+    "output_tokens": 505
+   }
+  },
+  {
+   "message_id": "msg_113d226a00018R0ZAlVHiXZW6d",
+   "gateway_log_id": 91543,
+   "request_id": "202610070045022813651218268d9d62QJmishb",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 82018,
+    "cache_read_tokens": 0,
+    "output_tokens": 101
+   }
+  },
+  {
+   "message_id": "msg_113d1659d001N9FZQr2Mo5furo",
+   "gateway_log_id": 91544,
+   "request_id": "202610070044127443636048268d9d6Waa2AAHc",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 79892,
+    "cache_read_tokens": 26624,
+    "output_tokens": 2008
+   }
+  },
+  {
+   "message_id": "msg_113d23a50001tXInAxI9y9Hegc",
+   "gateway_log_id": 91545,
+   "request_id": "202610070045072350595088268d9d68K683T6A",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 77404,
+    "cache_read_tokens": 4736,
+    "output_tokens": 121
+   }
+  },
+  {
+   "message_id": "msg_113cf6b36001KhdyhjifOqY7un",
+   "gateway_log_id": 91546,
+   "request_id": "202610070042030671961678268d9d6tdXDBe3T",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 73760,
+    "cache_read_tokens": 0,
+    "output_tokens": 10304
+   }
+  },
+  {
+   "message_id": "msg_113d251f5001ZJVi1tvtT7MqHK",
+   "gateway_log_id": 91548,
+   "request_id": "202610070045132938161348268d9d6d7L6uLzy",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 77539,
+    "cache_read_tokens": 4736,
+    "output_tokens": 528
+   }
+  },
+  {
+   "message_id": "msg_113d288b80018nDQmUeU272ksH",
+   "gateway_log_id": 91551,
+   "request_id": "202610070045272901355418268d9d68XhacWc8",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 55806,
+    "cache_read_tokens": 26624,
+    "output_tokens": 818
+   }
+  },
+  {
+   "message_id": "msg_113d2d9ed0017KJR9VQCLb7ImV",
+   "gateway_log_id": 91552,
+   "request_id": "202610070045480981937008268d9d6LkDh25eR",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 78018,
+    "cache_read_tokens": 4736,
+    "output_tokens": 64
+   }
+  },
+  {
+   "message_id": "msg_113d23e980013MeoNzPHIHQHsl",
+   "gateway_log_id": 91553,
+   "request_id": "202610070045083467716208268d9d6N04Rblcu",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 63345,
+    "cache_read_tokens": 43264,
+    "output_tokens": 1873
+   }
+  },
+  {
+   "message_id": "msg_113d2e8970015YwfinVeuWOkSj",
+   "gateway_log_id": 91554,
+   "request_id": "202610070045518150311988268d9d6P7M02Y7j",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 31976,
+    "cache_read_tokens": 51072,
+    "output_tokens": 196
+   }
+  },
+  {
+   "message_id": "msg_113d2fc17001YuC6IinxeY8Tci",
+   "gateway_log_id": 91555,
+   "request_id": "202610070045568180563758268d9d6mAaiZvM3",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 106942,
+    "cache_read_tokens": 0,
+    "output_tokens": 651
+   }
+  },
+  {
+   "message_id": "msg_113d32c94001pKpcopXJ8OWbxz",
+   "gateway_log_id": 91556,
+   "request_id": "202610070046092115983728268d9d6kv1LsNEF",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 107614,
+    "cache_read_tokens": 0,
+    "output_tokens": 117
+   }
+  },
+  {
+   "message_id": "msg_113d341cb001mV1YRut35Xoa2X",
+   "gateway_log_id": 91557,
+   "request_id": "202610070046146570866638268d9d6jWs4VQO0",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 107752,
+    "cache_read_tokens": 0,
+    "output_tokens": 105
+   }
+  },
+  {
+   "message_id": "msg_113d3537b001Up4Kt1bjrWqDbg",
+   "gateway_log_id": 91558,
+   "request_id": "202610070046192017810948268d9d6zu3bspyy",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 25695,
+    "cache_read_tokens": 82176,
+    "output_tokens": 65
+   }
+  },
+  {
+   "message_id": "msg_113d3607e001tl64TZPLnM43hv",
+   "gateway_log_id": 91559,
+   "request_id": "202610070046225547923108268d9d6hm1rJwuA",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 81333,
+    "cache_read_tokens": 26624,
+    "output_tokens": 98
+   }
+  },
+  {
+   "message_id": "msg_113d30341001D3fIS9khqi1Pad",
+   "gateway_log_id": 91560,
+   "request_id": "202610070045587075118858268d9d6eJp6Csr9",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 47502,
+    "cache_read_tokens": 51456,
+    "output_tokens": 1150
+   }
+  },
+  {
+   "message_id": "msg_113d25895001ABLmHW9jRAwdWh",
+   "gateway_log_id": 91561,
+   "request_id": "202610070045149224489218268d9d6U8hGuX2q",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 79942,
+    "cache_read_tokens": 0,
+    "output_tokens": 5973
+   }
+  },
+  {
+   "message_id": "msg_113d37071001kXJ6fOE8bkBwQI",
+   "gateway_log_id": 91562,
+   "request_id": "202610070046266194838818268d9d665MoE2YQ",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 108076,
+    "cache_read_tokens": 0,
+    "output_tokens": 1061
+   }
+  },
+  {
+   "message_id": "msg_113d377e8001fumq0JaF0NmiHh",
+   "gateway_log_id": 91563,
+   "request_id": "202610070046285328268368268d9d69O7DBaFi",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 72603,
+    "cache_read_tokens": 26624,
+    "output_tokens": 1260
+   }
+  },
+  {
+   "message_id": "msg_113d3bbe6001KUcydFZmxYgQGo",
+   "gateway_log_id": 91564,
+   "request_id": "202610070046458668114878268d9d68482hq7g",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 81195,
+    "cache_read_tokens": 4224,
+    "output_tokens": 458
+   }
+  },
+  {
+   "message_id": "msg_113d3d1e1001mjQ6KUVLjLKeIj",
+   "gateway_log_id": 91565,
+   "request_id": "202610070046515830253348268d9d69T7j0sF9",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 10208,
+    "cache_read_tokens": 98432,
+    "output_tokens": 728
+   }
+  },
+  {
+   "message_id": "msg_113d3ee530018wHJfj3tN5hBQL",
+   "gateway_log_id": 91566,
+   "request_id": "202610070046588246777118268d9d6jGJXhztb",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 86480,
+    "cache_read_tokens": 0,
+    "output_tokens": 610
+   }
+  },
+  {
+   "message_id": "msg_113d3e05b0014tVwLEreQcCmjh",
+   "gateway_log_id": 91567,
+   "request_id": "202610070046552974582438268d9d6cJ3rNcwm",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 95608,
+    "cache_read_tokens": 4736,
+    "output_tokens": 795
+   }
+  },
+  {
+   "message_id": "msg_113d4326b001HgqWLSt2JQAZVV",
+   "gateway_log_id": 91568,
+   "request_id": "202610070047163446763928268d9d6LaDyJ1xR",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 79070,
+    "cache_read_tokens": 26624,
+    "output_tokens": 520
+   }
+  },
+  {
+   "message_id": "msg_113d42f690012bJeKUBTUW1Uh4",
+   "gateway_log_id": 91569,
+   "request_id": "202610070047155040554078268d9d6H0yNDDhp",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 98450,
+    "cache_read_tokens": 0,
+    "output_tokens": 1118
+   }
+  },
+  {
+   "message_id": "msg_113d42af1001eSiTSarPa7ukjT",
+   "gateway_log_id": 91570,
+   "request_id": "202610070047143698507908268d9d6qfNOs3od",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 110044,
+    "cache_read_tokens": 0,
+    "output_tokens": 1140
+   }
+  },
+  {
+   "message_id": "msg_113d46e23001b72WCak4OkTWcK",
+   "gateway_log_id": 91571,
+   "request_id": "202610070047317790944898268d9d6bam4lCpW",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 101047,
+    "cache_read_tokens": 4736,
+    "output_tokens": 608
+   }
+  },
+  {
+   "message_id": "msg_113d48c2c001T1yFNRubvWcktU",
+   "gateway_log_id": 91572,
+   "request_id": "202610070047394705618928268d9d6ktNSYZvi",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 99088,
+    "cache_read_tokens": 0,
+    "output_tokens": 1044
+   }
+  },
+  {
+   "message_id": "msg_113d4e39f001a4grXLuWk80PDu",
+   "gateway_log_id": 91573,
+   "request_id": "202610070048016783252648268d9d6c74H8313",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 37811,
+    "cache_read_tokens": 61824,
+    "output_tokens": 277
+   }
+  },
+  {
+   "message_id": "msg_113d4ad7d001VI8YyX6eqXWyVl",
+   "gateway_log_id": 91574,
+   "request_id": "202610070047480204936778268d9d6zIzVcfIy",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 79270,
+    "cache_read_tokens": 26624,
+    "output_tokens": 1045
+   }
+  },
+  {
+   "message_id": "msg_113d4aa71001UvnM9Idmu8MO82",
+   "gateway_log_id": 91575,
+   "request_id": "202610070047471376963568268d9d6QFDH4VHq",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 27605,
+    "cache_read_tokens": 82688,
+    "output_tokens": 867
+   }
+  },
+  {
+   "message_id": "msg_113d51096001iXoTX3svHMnMZX",
+   "gateway_log_id": 91576,
+   "request_id": "202610070048131986687688268d9d6eNP40CqJ",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 49780,
+    "cache_read_tokens": 60288,
+    "output_tokens": 40
+   }
+  },
+  {
+   "message_id": "msg_113d520450013qkRPRIeYxwcFc",
+   "gateway_log_id": 91577,
+   "request_id": "202610070048171762440648268d9d6diA9G5wv",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 114743,
+    "cache_read_tokens": 0,
+    "output_tokens": 40
+   }
+  },
+  {
+   "message_id": "msg_113d50489001rHqpYJiUpuZ4F6",
+   "gateway_log_id": 91578,
+   "request_id": "202610070048101373494268268d9d6kkVrRfUz",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 79919,
+    "cache_read_tokens": 26624,
+    "output_tokens": 579
+   }
+  },
+  {
+   "message_id": "msg_113d53003001ZCbtYK20PKL2cS",
+   "gateway_log_id": 91579,
+   "request_id": "202610070048211878025518268d9d6TDqyhgfB",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 115531,
+    "cache_read_tokens": 5888,
+    "output_tokens": 203
+   }
+  },
+  {
+   "message_id": "msg_113d53e0b0017R6w1DiyhzjfVu",
+   "gateway_log_id": 91580,
+   "request_id": "202610070048247897542418268d9d6g4cJnSgi",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 102061,
+    "cache_read_tokens": 4736,
+    "output_tokens": 121
+   }
+  },
+  {
+   "message_id": "msg_113d5004a001zCFDB2M5hgCdAl",
+   "gateway_log_id": 91581,
+   "request_id": "202610070048090301053118268d9d6nFj6dKvm",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 96395,
+    "cache_read_tokens": 4224,
+    "output_tokens": 776
+   }
+  },
+  {
+   "message_id": "msg_113d54f02001kYhYZCx6WywGjY",
+   "gateway_log_id": 91582,
+   "request_id": "202610070048291606758388268d9d6KTJInAxx",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 123545,
+    "cache_read_tokens": 0,
+    "output_tokens": 80
+   }
+  },
+  {
+   "message_id": "msg_113d56716001Wf1VKzclcQBE9U",
+   "gateway_log_id": 91583,
+   "request_id": "202610070048352784361308268d9d6nh2UlBag",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 125580,
+    "cache_read_tokens": 0,
+    "output_tokens": 99
+   }
+  },
+  {
+   "message_id": "msg_113d5511d001wXmgFKoYskIkiH",
+   "gateway_log_id": 91584,
+   "request_id": "202610070048296673982218268d9d6mrpAhNru",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 47931,
+    "cache_read_tokens": 59008,
+    "output_tokens": 451
+   }
+  },
+  {
+   "message_id": "msg_113d5776c001J62fKmeVCkAeO4",
+   "gateway_log_id": 91585,
+   "request_id": "202610070048394796852848268d9d6LBKUftZp",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 125700,
+    "cache_read_tokens": 0,
+    "output_tokens": 201
+   }
+  },
+  {
+   "message_id": "msg_113d58520001yVXzceOg51ODe7",
+   "gateway_log_id": 91586,
+   "request_id": "202610070048430043408148268d9d66DABCaM2",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 102341,
+    "cache_read_tokens": 4736,
+    "output_tokens": 276
+   }
+  },
+  {
+   "message_id": "msg_113d5a34f0018MlMPKUGGukwc6",
+   "gateway_log_id": 91587,
+   "request_id": "202610070048507496085678268d9d6NEA8wtEN",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 107367,
+    "cache_read_tokens": 0,
+    "output_tokens": 224
+   }
+  },
+  {
+   "message_id": "msg_113d59611001etSKhKVALKnXo6",
+   "gateway_log_id": 91588,
+   "request_id": "202610070048473661519508268d9d68FBWCOfg",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 44155,
+    "cache_read_tokens": 87552,
+    "output_tokens": 505
+   }
+  },
+  {
+   "message_id": "msg_113d5df5d001X98GVowjYMrqLI",
+   "gateway_log_id": 91589,
+   "request_id": "202610070049061138851768268d9d6EXTce4Ct",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 132387,
+    "cache_read_tokens": 0,
+    "output_tokens": 480
+   }
+  },
+  {
+   "message_id": "msg_113d5ca47001CnoBYSsS53xSgt",
+   "gateway_log_id": 91590,
+   "request_id": "202610070049007162969318268d9d6n11BvKAM",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 8723,
+    "cache_read_tokens": 98816,
+    "output_tokens": 1264
+   }
+  },
+  {
+   "message_id": "msg_113d6267c001aq05iRV2wItKLd",
+   "gateway_log_id": 91591,
+   "request_id": "202610070049243122131908268d9d6kpPTtuTy",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 108473,
+    "cache_read_tokens": 0,
+    "output_tokens": 4226
+   }
+  },
+  {
+   "message_id": "msg_113d7168a00165ZXZOpBQiGqCM",
+   "gateway_log_id": 91592,
+   "request_id": "202610070050257674237578268d9d6LXxgJAWP",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 5891,
+    "cache_read_tokens": 106368,
+    "output_tokens": 394
+   }
+  },
+  {
+   "message_id": "msg_113d73c6e001SXFYrANc6F8dxU",
+   "gateway_log_id": 91593,
+   "request_id": "202610070050354895752178268d9d6ter1rJar",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 85747,
+    "cache_read_tokens": 26624,
+    "output_tokens": 316
+   }
+  },
+  {
+   "message_id": "msg_113d762a1001ubkk7yKS7Vq8ab",
+   "gateway_log_id": 91594,
+   "request_id": "202610070050452451627188268d9d6cY8ipCXV",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 112701,
+    "cache_read_tokens": 0,
+    "output_tokens": 1299
+   }
+  },
+  {
+   "message_id": "msg_113d7c1c40019pMzVmTjJK4Hep",
+   "gateway_log_id": 91595,
+   "request_id": "202610070051095897411288268d9d6uOT45ygb",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 87377,
+    "cache_read_tokens": 26624,
+    "output_tokens": 631
+   }
+  },
+  {
+   "message_id": "msg_113d80214001iAz2ocdDnjvgGL",
+   "gateway_log_id": 91596,
+   "request_id": "202610070051260878615988268d9d6D1Gm1Sse",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 6876,
+    "cache_read_tokens": 107392,
+    "output_tokens": 690
+   }
+  },
+  {
+   "message_id": "msg_113d84fb10017uXk6W2SNdL3R1",
+   "gateway_log_id": 91597,
+   "request_id": "202610070051459246050168268d9d6Q8FL4vHU",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 128405,
+    "cache_read_tokens": 5888,
+    "output_tokens": 284
+   }
+  },
+  {
+   "message_id": "msg_113d88533001BGNGomxdkNN7k5",
+   "gateway_log_id": 91598,
+   "request_id": "202610070051596184638378268d9d6D4nfX2dh",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 140338,
+    "cache_read_tokens": 0,
+    "output_tokens": 282
+   }
+  },
+  {
+   "message_id": "msg_113d952e8001o6O4cH3bCoWqbM",
+   "gateway_log_id": 91602,
+   "request_id": "202610070052523078187458268d9d63INEg36o",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 135434,
+    "cache_read_tokens": 5888,
+    "output_tokens": 155
+   }
+  },
+  {
+   "message_id": "msg_113d96a9f001FqsuhT4UOd4qNP",
+   "gateway_log_id": 91603,
+   "request_id": "202610070052583605783788268d9d6RCB4E2Ko",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 141712,
+    "cache_read_tokens": 0,
+    "output_tokens": 336
+   }
+  },
+  {
+   "message_id": "msg_113da4575001OByvmr2s5E9tXQ",
+   "gateway_log_id": 91605,
+   "request_id": "202610070053543745068618268d9d6xjnHqf3z",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 138687,
+    "cache_read_tokens": 5888,
+    "output_tokens": 1110
+   }
+  },
+  {
+   "message_id": "msg_113dac8fd001WmDjtFusKd4tMf",
+   "gateway_log_id": 91607,
+   "request_id": "202610070054279952546978268d9d6HcpRjnIi",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 3926,
+    "cache_read_tokens": 26624,
+    "output_tokens": 286
+   }
+  },
+  {
+   "message_id": "msg_113daed63001gYOsROuofFfDO5",
+   "gateway_log_id": 91608,
+   "request_id": "202610070054372466870368268d9d6XVXkyVhw",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 4761,
+    "cache_read_tokens": 26624,
+    "output_tokens": 272
+   }
+  },
+  {
+   "message_id": "msg_113dac564001zbw5BDwIA2lbv1",
+   "gateway_log_id": 91609,
+   "request_id": "202610070054271331782108268d9d6VRuwmGw2",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 139462,
+    "cache_read_tokens": 5888,
+    "output_tokens": 710
+   }
+  },
+  {
+   "message_id": "msg_113db0b1a001fvw50zK17oJtMf",
+   "gateway_log_id": 91611,
+   "request_id": "202610070054448549031548268d9d6PxR7AJgE",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 9022,
+    "cache_read_tokens": 26624,
+    "output_tokens": 274
+   }
+  },
+  {
+   "message_id": "msg_113db2816001G9ahVBhEj04BWR",
+   "gateway_log_id": 91616,
+   "request_id": "202610070054523122418758268d9d682s5wnVH",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 23848,
+    "cache_read_tokens": 30464,
+    "output_tokens": 702
+   }
+  },
+  {
+   "message_id": "msg_113db24940012nD10Z6QH4ArNn",
+   "gateway_log_id": 91619,
+   "request_id": "202610070054515455233388268d9d6ALXGM2Zq",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 145680,
+    "cache_read_tokens": 0,
+    "output_tokens": 855
+   }
+  },
+  {
+   "message_id": "msg_113db6e23001M2IDz1xe66NWtb",
+   "gateway_log_id": 91620,
+   "request_id": "202610070055102237083548268d9d6KgkvfHEb",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 50391,
+    "cache_read_tokens": 4736,
+    "output_tokens": 322
+   }
+  },
+  {
+   "message_id": "msg_113db83b5001E0xpeHslSiXkQo",
+   "gateway_log_id": 91622,
+   "request_id": "202610070055158615462448268d9d6PwX4TFbj",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 13875,
+    "cache_read_tokens": 132224,
+    "output_tokens": 250
+   }
+  },
+  {
+   "message_id": "msg_113dba1da001Kw799EGd6y9D4m",
+   "gateway_log_id": 91624,
+   "request_id": "202610070055235765542128268d9d6vndeeRGn",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 56066,
+    "cache_read_tokens": 93056,
+    "output_tokens": 159
+   }
+  },
+  {
+   "message_id": "msg_113db8cec001hmaxUVDmvtIweX",
+   "gateway_log_id": 91623,
+   "request_id": "202610070055181127729528268d9d6fBk73RCj",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 28885,
+    "cache_read_tokens": 26624,
+    "output_tokens": 260
+   }
+  },
+  {
+   "message_id": "msg_113f23cbc001vGST5vT9IboseS",
+   "gateway_log_id": 91789,
+   "request_id": "202610070120049722588998268d9d6G6yUkc0V",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 52301,
+    "cache_read_tokens": 26624,
+    "output_tokens": 472
+   }
+  },
+  {
+   "message_id": "msg_113f2734b001VteHzApP1P0u6y",
+   "gateway_log_id": 91790,
+   "request_id": "202610070120188792529378268d9d6JTbqVsjB",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 79307,
+    "cache_read_tokens": 0,
+    "output_tokens": 517
+   }
+  },
+  {
+   "message_id": "msg_113f44651001MggloCaMucRDMT",
+   "gateway_log_id": 91791,
+   "request_id": "202610070122184482812218268d9d6PwWQjWYt",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 79243,
+    "cache_read_tokens": 4736,
+    "output_tokens": 661
+   }
+  },
+  {
+   "message_id": "msg_113f4876c00134AYIUZkV865IV",
+   "gateway_log_id": 91792,
+   "request_id": "202610070122351147426078268d9d6XFaQQXL6",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 62828,
+    "cache_read_tokens": 26624,
+    "output_tokens": 689
+   }
+  },
+  {
+   "message_id": "msg_113f4ccee001QZSefq9jaAoUQM",
+   "gateway_log_id": 91793,
+   "request_id": "202610070122529286206408268d9d6kEjEtoZM",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 72382,
+    "cache_read_tokens": 26624,
+    "output_tokens": 1058
+   }
+  },
+  {
+   "message_id": "msg_113f52fdb001DhG4o9W9Ba22pU",
+   "gateway_log_id": 91794,
+   "request_id": "202610070123182413122698268d9d6bfcDcwJD",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 72846,
+    "cache_read_tokens": 26624,
+    "output_tokens": 1539
+   }
+  },
+  {
+   "message_id": "msg_113f5b69e001naUQGHdP0LDxt6",
+   "gateway_log_id": 91795,
+   "request_id": "202610070123527404391108268d9d6xoOdaQVt",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 104032,
+    "cache_read_tokens": 0,
+    "output_tokens": 681
+   }
+  },
+  {
+   "message_id": "msg_113f5f6da0016knSaFs4Sacmq5",
+   "gateway_log_id": 91796,
+   "request_id": "202610070124091937105188268d9d6yy1gbY4d",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 104412,
+    "cache_read_tokens": 0,
+    "output_tokens": 1011
+   }
+  },
+  {
+   "message_id": "msg_113f652c6001WkqOGaTlTkJOZQ",
+   "gateway_log_id": 91797,
+   "request_id": "202610070124328073543218268d9d6paa3Sjf1",
+   "account_id": "openai-personal",
+   "billing_class": "subscription",
+   "route": "automaticai/personal/sol-6.1",
+   "tokens": {
+    "input_tokens": 45359,
+    "cache_read_tokens": 105984,
+    "output_tokens": 386
+   }
+  }
+ ],
+ "settlement": {
+  "source": "NewAPI logs table (read-only SELECT)",
+  "rows_found": 202,
+  "rows_expected": 202,
+  "quota_sum": 0,
+  "quota_nonzero_rows": 0,
+  "prompt_tokens_sum": 17083102,
+  "completion_tokens_sum": 194612,
+  "models": [
+   "automaticai/personal/sol-6.1"
+  ]
+ },
+ "other_gateway_rows": [
+  {
+   "provider": "anthropic",
+   "model": "claude-opus-5-5",
+   "rows": 239
+  },
+  {
+   "provider": "anthropic",
+   "model": "claude-sonnet-5-5",
+   "rows": 41
+  },
+  {
+   "provider": "moonshot",
+   "model": "kimi-for-coding",
+   "rows": 3
+  },
+  {
+   "provider": "openai",
+   "model": "gpt-6.1-sol",
+   "rows": 371
+  },
+  {
+   "provider": "openrouter",
+   "model": "deepseek/deepseek-v4-flash-0731",
+   "rows": 32
+  },
+  {
+   "provider": "zai",
+   "model": "glm-5.3",
+   "rows": 1
+  },
+  {
+   "provider": "zai",
+   "model": "glm-5.3-flash",
+   "rows": 41
+  }
+ ]
+}

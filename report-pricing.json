@@ -1,0 +1,70 @@
+{
+  "actual": {
+    "llm_usd": null,
+    "tts_provider_usd": 0,
+    "asr_provider_usd": 0,
+    "search_usd": null,
+    "energy_usd": null,
+    "total_usd": null
+  },
+  "assumptions": {
+    "llm_uncached_per_million": 2.0,
+    "llm_output_per_million": 10.0,
+    "llm_cache_read_per_million": 0.1,
+    "llm_cache_write_per_million": 2.5,
+    "search_per_request": null,
+    "search_requests": null,
+    "gpu_watts_low": 150,
+    "gpu_watts_high": 350,
+    "electricity_usd_per_kwh": 0.15,
+    "synthesis_seconds": 1460.7673996747471
+  },
+  "llm_api_equivalent": {
+    "native_model": "gpt-6.1-sol",
+    "provider": "OpenAI",
+    "gateway_route": "automaticai/personal/sol-6.1",
+    "gateway_account": "openai-personal",
+    "actual_billing_path": "subscription",
+    "pricing_basis": "Published Standard API pricing, each request at most 272,000 input tokens; no fast-mode or regional-processing premium",
+    "uncached_input_usd_per_million": 2.0,
+    "cached_input_usd_per_million": 0.1,
+    "cache_write_usd_per_million": 2.5,
+    "output_usd_per_million": 10.0,
+    "long_context_threshold_input_tokens": 272000,
+    "long_context_multipliers": {"input_and_cache": 2.0, "output": 1.5},
+    "fast_multiplier": 2.0,
+    "regional_multiplier": 1.1,
+    "original_snapshot_standard_usd": 29.404868,
+    "original_snapshot_standard_breakdown_usd": {"uncached_input": 27.105724, "cache_read": 0.353024, "cache_write": 0.0, "output": 1.94612},
+    "not_actual_charge": true,
+    "route_evidence": "../client-portal/gateway/ops/routes.json:14",
+    "historical_route_samples": {
+      "newapi_ledger_ids": [91796, 91797, 91798],
+      "native_model": "gpt-6.1-sol",
+      "returned_model": "gpt-6.1-sol",
+      "billing": "subscription",
+      "settled_usd_each": 0,
+      "attribution": "Samples verify historical route and settlement; lack session/project IDs, so not independently counted as BookJangler charges"
+    }
+  },
+  "search_rates": [
+    {"provider": "Brave Search", "paid_usd_per_request": 0.005, "allowance": "$5 monthly credits; actual plan and remaining allowance not obtained", "actual_charge_usd": null},
+    {"provider": "Tavily", "mode": "Basic", "credits_per_request": 1, "payg_usd_per_request": 0.008, "prepaid_usd_per_request_range": [0.005, 0.0075], "allowance": "1,000 free credits per month; actual plan and remaining allowance not obtained", "actual_charge_usd": null},
+    {"provider": "Tavily", "mode": "Advanced", "credits_per_request": 2, "payg_usd_per_request": 0.016, "prepaid_usd_per_request_range": [0.01, 0.015], "allowance": "Search depth and provider request attempts need receipts; wrapper fetch is direct page retrieval, not Tavily Extract", "actual_charge_usd": null}
+  ],
+  "gpu_scenario": {
+    "description": "Assumed incremental GPU-only power during synthesis, not a power-meter reading",
+    "kwh_low": 0.06086530831978113,
+    "kwh_high": 0.14201905274615598,
+    "usd_low": 0.00912979624796717,
+    "usd_high": 0.021302857911923396,
+    "formula": "request_wall_seconds * assumed_watts / 3600000 * assumed_usd_per_kwh",
+    "exclusions": ["CPU, memory, disk and whole-host energy", "OCR and CPU ASR energy", "Idle model residency and background services", "Hardware depreciation, cooling, tax and subscription allocations"]
+  },
+  "explanation": "API-equivalent LLM cost is a counterfactual at published GPT-6.1 Sol prices, not a cash bill: the observed route is subscription-backed. OpenCode's zero reported model cost is not an invoice. Local TTS and ASR invoked no paid provider. Search charges and subscription allocation remain unknown. GPU electricity is an adjustable assumption, not measured energy.",
+  "sources": [
+    {"label": "OpenAI GPT-6.1 Sol model and API pricing, retrieved 2026-10-07", "url": "https://developers.openai.com/api/docs/models/gpt-6.1-sol"},
+    {"label": "Brave Search API pricing, retrieved 2026-10-07", "url": "https://brave.com/search/api/"},
+    {"label": "Tavily API credits and pricing, retrieved 2026-10-07", "url": "https://docs.tavily.com/documentation/api-credits"}
+  ]
+}

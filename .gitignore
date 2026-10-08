@@ -1,0 +1,24 @@
+# The Good Earth (1931) stays under US copyright until 2027-01-01.
+# Keep the source, its extracted text, the quote table and all audio local.
+*.pdf
+chapter.txt
+chapter.json
+quote-turns.json
+*.wav
+*.mp3
+*.m4b
+
+# Render outputs: keep only the text-free receipts and metrics.
+output/*
+!output/voxcpm2-chapter-01/
+output/voxcpm2-chapter-01/*
+!output/voxcpm2-chapter-01/metrics.json
+!output/voxcpm2-chapter-01/llm-usage.json
+!output/voxcpm2-chapter-01/requests.jsonl
+!output/voxcpm2-chapter-01/assembly.json
+
+# Runtime droppings
+.lastagent
+__pycache__/
+.ruff_cache/
+.pytest_cache/
