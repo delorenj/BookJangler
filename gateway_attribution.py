@@ -9,7 +9,9 @@ gateway row is claimed twice. Anything else stays unattributed.
 
 Settlement is then read from the NewAPI `logs` table (read-only SELECT through
 `docker exec`; no credentials leave the container) so `quota` is observed per
-request instead of sampled.
+request instead of sampled. The gateway's database runs where client-portal's
+`gateway/TARGET` says: on this host, or on the cloud VM behind the Docker context
+`aai-cloud`.
 
     python3 gateway_attribution.py            # writes report-gateway-attribution.json
 """
@@ -17,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -27,6 +30,14 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parent
 SLACK_SECONDS = 30
+GATEWAY_TARGET_FILE = Path.home() / "code" / "client-portal" / "gateway" / "TARGET"
+
+
+def gateway_docker() -> list[str]:
+    """The docker command that reaches the gateway's containers, wherever they run."""
+    target = os.environ.get("AAI_GATEWAY_TARGET") or (
+        GATEWAY_TARGET_FILE.read_text().strip() if GATEWAY_TARGET_FILE.exists() else "home")
+    return ["docker", "--context", os.environ.get("AAI_GATEWAY_CONTEXT", "aai-cloud")] if target == "cloud" else ["docker"]
 
 
 def epoch(stamp: str) -> float:
@@ -73,7 +84,7 @@ def newapi_settlements(ids: list[int], container: str = "newapi-postgres") -> di
     sql = ("select id,quota,prompt_tokens,completion_tokens,model_name from logs where id in (%s) order by id"
            % ",".join(str(i) for i in ids))
     script = 'psql -U "$POSTGRES_USER" -d "${POSTGRES_DB:-$POSTGRES_USER}" -At -F"|" -c "%s"' % sql
-    out = subprocess.run(["docker", "exec", container, "sh", "-c", script], check=True,
+    out = subprocess.run([*gateway_docker(), "exec", container, "sh", "-c", script], check=True,
                          capture_output=True, text=True, timeout=60).stdout
     rows = {}
     for line in out.splitlines():
